@@ -1,12 +1,12 @@
 // App.js
 import React, { useContext, useState } from 'react';
-import { AuthContext } from '.AuthContext';
-import Header from './components/Header/Header';
-import PaymentForm from './components/PaymentForm/PaymentForm';
-import PaymentTable from './components/PaymentTable/PaymentTable';
-import CalendarView from './components/CalendarView/CalendarView';
-import TotalPendingDisplay from './components/TotalPendingDisplay/TotalPendingDisplay';
-import Login from './components/Login/Login';
+import { AuthContext } from './contexts/AuthContext';
+import Header from './components/Header';
+import PaymentForm from './components/PaymentForm';
+import PaymentTable from './components/PaymentTable';
+import CalendarView from './components/CalendarView';
+import TotalPendingDisplay from './components/TotalPendingDisplay';
+import Login from './components/Login';
 
 function App() {
   const { isAuthenticated, logout } = useContext(AuthContext);
