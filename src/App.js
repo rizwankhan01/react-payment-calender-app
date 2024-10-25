@@ -1,6 +1,6 @@
 // App.js
 import React, { useContext, useState } from 'react';
-import { AuthContext } from './contexts/AuthContext';
+import { AuthContext } from '.AuthContext';
 import Header from './components/Header/Header';
 import PaymentForm from './components/PaymentForm/PaymentForm';
 import PaymentTable from './components/PaymentTable/PaymentTable';
