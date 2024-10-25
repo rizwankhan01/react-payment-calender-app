@@ -1,3 +1,13 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f2f5;
+}
+
 .App {
   text-align: center;
 }
@@ -5,6 +15,7 @@
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+  transition: transform 0.5s ease-in-out;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -13,8 +24,12 @@
   }
 }
 
+.App-logo:hover {
+  transform: scale(1.1);
+}
+
 .App-header {
-  background-color: #282c34;
+  background-color: #1e1f26;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -22,10 +37,18 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
 }
 
 .App-link {
   color: #61dafb;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.App-link:hover {
+  color: #21a1f1;
 }
 
 @keyframes App-logo-spin {
